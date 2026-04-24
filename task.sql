@@ -3,7 +3,7 @@
 CREATE DATABASE ShopDB;
 USE ShopDB;
 
--- Populate test data
+
 CREATE TABLE Countries (
 ID INT AUTO_INCREMENT PRIMARY KEY,
  Name VARCHAR(255)
@@ -32,6 +32,7 @@ CREATE TABLE ProductInventory (
     FOREIGN KEY (WarehouseID) REFERENCES Warehouses(ID)
 );
 
+-- Populate test data
 
 INSERT INTO Countries (Name) VALUES ('Country1'), ('Country2');
 
