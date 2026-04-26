@@ -25,10 +25,10 @@ FOREIGN KEY (CountryID) REFERENCES Countries(ID)
 
 
 CREATE TABLE ProductInventory (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
     ProductID INT,
     WarehouseID INT,
     Amount INT,
-    PRIMARY KEY (ProductID, WarehouseID),
     FOREIGN KEY (ProductID) REFERENCES Products(ID),
     FOREIGN KEY (WarehouseID) REFERENCES Warehouses(ID)
 );
